@@ -7,12 +7,14 @@ body {
 }
 
 header {
-    background-image: url('../../assets/img/1.jpg');
+    background-image: url('../../assets/img/concesionaria/toyota/toyota_expc_dsk.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
     text-align: center;
     padding: 20px;
+    width: auto;
+    height: 200px;
 }
 
 nav {
