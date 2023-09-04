@@ -1,0 +1,67 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #180148;
+  color: #fff;
+  padding: 8rem;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5rem;
+}
+
+.slider {
+  display: flex;
+  width: 500%;
+  height: 55rem;
+  transition: all 0.25s ease-in;
+  transform: translateX(0);
+}
+.slider .box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
+}
+.prev,.next,.trail {
+  z-index: 10000;
+  position: absolute;
+}
+.trail {
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.trail div {
+  padding: 2rem;
+  border-top: 3px solid #fff;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+.active {
+  opacity: 1 !important;
+}
+img{
+  width: 1200px;
+  height: auto;
+}
