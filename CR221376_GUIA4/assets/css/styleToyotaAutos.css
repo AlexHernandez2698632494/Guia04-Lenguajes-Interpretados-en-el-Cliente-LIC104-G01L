@@ -92,3 +92,15 @@ section img{
 hr{
     color: black;
 }
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .vehiculo {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .vehiculo {
+        width: 100%;
+    }
+}
